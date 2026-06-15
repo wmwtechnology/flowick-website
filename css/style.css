@@ -84,23 +84,24 @@ img{max-width:100%;display:block;}
 
 /* ===== LOGOS CAROUSEL ===== */
 .logos-section{
-  display:flex; justify-content:center; align-items:center; gap:20px;
   max-width:1080px; margin:10px auto 0; padding:10px;
+  overflow:hidden;
 }
-.logos-section .arrow{
-  width:40px; height:40px; display:flex; align-items:center; justify-content:center;
-  color:var(--text-default); font-size:20px; cursor:pointer; background:none; border:none;
+.logos-track{
+  display:flex; width:max-content;
+  animation: logos-slide 30s linear infinite;
 }
-.logos-grid{
-  display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:0;
-  flex:1;
-}
-.logos-grid .logo-card{
+.logos-track .logo-card{
   background:#fff; border-radius:10px; padding:10px;
   display:flex; align-items:center; justify-content:center;
-  height:150px; margin:0 1px 0 0;
+  height:150px; width:300px; flex-shrink:0;
 }
-.logos-grid .logo-card img{max-height:140px; object-fit:contain;}
+.logos-track .logo-card img{max-height:140px; object-fit:contain;}
+
+@keyframes logos-slide{
+  from{ transform:translateX(-50%); }
+  to{ transform:translateX(0); }
+}
 
 /* ===== APP PROMO ===== */
 .app-promo{
@@ -357,6 +358,6 @@ img{max-width:100%;display:block;}
 @media (max-width:768px){
   .hero-text h1{font-size:38px;}
   .hero-text h2{font-size:24px;}
-  .logos-grid{grid-template-columns:repeat(2,1fr);}
+  .logos-track .logo-card{width:220px;}
   .news-grid{grid-template-columns:1fr;}
 }
