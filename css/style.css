@@ -96,7 +96,7 @@ img{max-width:100%;display:block;}
   display:flex; align-items:center; justify-content:center;
   height:150px; width:300px; flex-shrink:0;
 }
-.logos-track .logo-card img{max-height:140px; object-fit:contain;}
+.logos-track .logo-card img{height:60px; width:auto; object-fit:contain;}
 
 @keyframes logos-slide{
   from{ transform:translateX(-50%); }
