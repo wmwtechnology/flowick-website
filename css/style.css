@@ -332,7 +332,7 @@ img{max-width:100%;display:block;}
 .social-icons{display:flex; gap:10px; margin-top:8px;}
 .social-icons a{color:var(--text-default);}
 .social-icons i{font-size:20px; cursor:pointer;}
-.store-mini{display:flex; align-items:center; gap:8px; margin-bottom:10px; cursor:pointer;}
+.store-mini{display:flex; align-items:center; gap:8px; margin-bottom:10px; cursor:pointer; text-decoration:none;}
 .store-mini img, .store-mini .apple-icon{width:35px; height:35px; flex-shrink:0;}
 .store-mini .apple-icon{
   border:2px solid var(--text-default); border-radius:10px; display:flex; align-items:center; justify-content:center; color:var(--text-default); font-size:18px;
