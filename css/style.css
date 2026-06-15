@@ -27,10 +27,11 @@ img{max-width:100%;display:block;}
   box-shadow:0 10px 30px rgba(0,0,0,0.1);
   border-radius:8px;
   display:flex; align-items:center; justify-content:space-between;
-  padding:10px 24px;
+  padding:12px 24px;
+  min-height:64px;
   flex-wrap:wrap;
 }
-.navbar-inner img{width:150px;}
+.navbar-inner img{width:auto; height:40px;}
 .nav-links{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
 .nav-links button{
   font-family:'Poppins',sans-serif; font-size:12px; font-weight:600;
