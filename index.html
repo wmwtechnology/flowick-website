@@ -241,6 +241,11 @@
         <i class="fa fa-whatsapp"></i>
       </a>
     </div>
+    <svg class="wave wave-top" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+      <path opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
+      <path opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
+      <path d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
+    </svg>
     <div class="contact-inner">
       <img class="contact-image" src="assets/images/contact.png" alt="">
       <form class="contact-form-wrap contact-form">
@@ -266,7 +271,6 @@
             <option>Satın Alma Yönetimi</option>
             <option>Üretim Yönetimi</option>
             <option>Kalite Kontrol Yönetimi</option>
-            <option>Doküman Yönetimi</option>
             <option>Malzeme Tedarik Planlama</option>
             <option>Finans Yönetimi</option>
             <option>Değerlendirme Yönetimi</option>
@@ -275,66 +279,44 @@
             <option>Lojistik Yönetimi</option>
             <option>İntranet</option>
           </select>
-          <input type="text" name="konu" placeholder="Konu Başlığı">
         </div>
+        <input class="contact-konu" type="text" name="konu" placeholder="Konu Başlığı">
         <textarea name="mesaj" placeholder="Mesaj"></textarea>
         <label class="contact-checkbox">
           <input type="checkbox" required>
           <span>Aydınlatma Metni kapsamında kimlik ve iletişim verilerimin Flowick Teknoloji Hizmetleri Anonim Şirketi tarafından hizmetlerinin tanıtımı, etkinlik ve haberlere ilişkin bilgilendirmelerin yapılması amacıyla işlenmesini ve bununla sınırlı olarak hizmet alınan üçüncü taraflar ile paylaşılmasını ve e-posta adresime reklam, tanıtım ve bilgilendirme vb. ticari elektronik ileti gönderilmesini kabul ediyorum.</span>
         </label>
-        <button type="submit" class="contact-submit">Gönder</button>
+        <div class="contact-submit-row">
+          <button type="submit" class="contact-submit">Gönder</button>
+        </div>
         <div class="form-status"></div>
       </form>
     </div>
-    <svg class="wave" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-      <path opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
-      <path opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
-      <path d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
-    </svg>
   </div>
 
   <!-- BOTTOM FOOTER -->
   <div class="bottom-footer">
     <div class="bottom-footer-inner">
+
       <div class="footer-logo">
         <img src="assets/logos/flowick-logo-footer.svg" alt="Flowick Logo">
-        <div class="footer-contacts">
-          <div class="footer-contact-item">
-            <div class="icon-box"><i class="fa fa-phone"></i></div>
-            <div>
-              <p class="label">Telefon</p>
-              <p class="value">0850 307 3785</p>
-            </div>
-          </div>
-          <div class="footer-contact-item">
-            <div class="icon-box"><i class="fa fa-envelope"></i></div>
-            <div>
-              <p class="label">E-posta</p>
-              <p class="value">info@flowick.com</p>
-            </div>
-          </div>
-          <div class="footer-contact-item">
-            <div class="icon-box"><i class="fa fa-location-arrow"></i></div>
-            <div>
-              <p class="label">Adres</p>
-              <p class="value">Küçükbakkalköy Mah. Defne Sk. Flora Residance, No: 1, İç Kapı No: 365 Ataşehir/İSTANBUL</p>
-            </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-contact-item">
+          <div class="icon-box"><i class="fa fa-phone"></i></div>
+          <div>
+            <p class="label">Telefon</p>
+            <p class="value">0850 307 3785</p>
           </div>
         </div>
-        <a class="store-mini" href="https://play.google.com/store/apps/details?id=com.mycompany.flowickbpm" target="_blank" rel="noopener">
-          <img src="assets/images/google-play.png" alt="">
+        <div class="footer-contact-item" style="margin-top:10px;">
+          <div class="icon-box"><i class="fa fa-location-arrow"></i></div>
           <div>
-            <p class="store-title">GOOGLE PLAY'den</p>
-            <p class="store-sub">İNDİREBİLİRSİNİZ</p>
+            <p class="label">Adres</p>
+            <p class="value">Küçükbakkalköy Mah. Defne Sk. Flora Residance, No: 1, İç Kapı No: 365 Ataşehir/İSTANBUL</p>
           </div>
-        </a>
-        <a class="store-mini" href="https://apps.apple.com/us/app/flowick-bpm/id6736679156" target="_blank" rel="noopener">
-          <div class="apple-icon"><i class="fa fa-apple"></i></div>
-          <div>
-            <p class="store-title">APP STORE'dan</p>
-            <p class="store-sub">İNDİREBİLİRSİNİZ</p>
-          </div>
-        </a>
+        </div>
       </div>
 
       <div class="footer-col">
@@ -356,6 +338,23 @@
       </div>
 
       <div class="footer-col">
+        <a class="store-mini" href="https://play.google.com/store/apps/details?id=com.mycompany.flowickbpm" target="_blank" rel="noopener">
+          <img src="assets/images/google-play.png" alt="">
+          <div>
+            <p class="store-title">GOOGLE PLAY'den</p>
+            <p class="store-sub">İNDİREBİLİRSİNİZ</p>
+          </div>
+        </a>
+        <a class="store-mini" href="https://apps.apple.com/us/app/flowick-bpm/id6736679156" target="_blank" rel="noopener">
+          <div class="apple-icon"><i class="fa fa-apple"></i></div>
+          <div>
+            <p class="store-title">APP STORE'dan</p>
+            <p class="store-sub">İNDİREBİLİRSİNİZ</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="footer-col">
         <h4>Belgelerimiz</h4>
         <div class="cert-row">
           <img src="assets/certificates/pngwing.png" alt="Sertifika">
@@ -363,6 +362,7 @@
           <img src="assets/certificates/iso9001.png" alt="ISO 9001">
         </div>
       </div>
+
     </div>
   </div>
 

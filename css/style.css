@@ -271,39 +271,49 @@ img{max-width:100%;display:block;}
 
 /* ===== CONTACT (orange) ===== */
 .contact-section{
-  background:rgb(251,168,0); padding-top:70px; padding-bottom:0;
-  margin-top:40px; min-height:650px; position:relative;
+  background:rgb(251,168,0); padding-bottom:40px;
+  margin-top:40px; position:relative;
+}
+.wave-top{
+  display:block; width:100%; transform:scaleY(-1); margin-bottom:10px; margin-top:-2px;
 }
 .contact-inner{
-  display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start; gap:20px;
-  padding:0 20px;
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:20px;
+  padding:0 40px; max-width:1200px; margin:0 auto;
 }
-.contact-image{max-width:280px; width:100%; margin:10px 20px;}
+.contact-image{max-width:360px; width:100%;}
 .contact-form-wrap{
-  max-width:490px; width:100%; padding:0 15px; margin:0 10px 10px;
+  flex:1; min-width:300px; padding:0 10px;
 }
-.contact-form-wrap h2{font-size:36px; font-weight:bold; color:#fff; margin:0 0 10px;}
-.contact-row{display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:10px;}
+.contact-form-wrap h2{font-size:36px; font-weight:bold; color:#fff; margin:0 0 14px;}
+.contact-row{display:flex; flex-wrap:nowrap; gap:8px; margin-bottom:8px;}
 .contact-row input, .contact-row select{
   background:rgb(252,252,252); box-shadow:0 4px 16px 4px rgba(171,171,171,0.15);
-  border:1px solid transparent; border-radius:15px; font-family:'Poppins',sans-serif;
-  font-size:15px; color:rgb(156,156,156); padding:0 15px; height:50px; width:220px; flex:1;
+  border:1px solid transparent; border-radius:10px; font-family:'Poppins',sans-serif;
+  font-size:13px; color:rgb(156,156,156); padding:0 10px; height:46px; flex:1; min-width:0;
+}
+.contact-konu{
+  display:block; width:100%; height:46px; margin-bottom:8px;
+  background:rgb(252,252,252); box-shadow:0 4px 16px 4px rgba(171,171,171,0.15);
+  border:1px solid transparent; border-radius:10px; font-family:'Poppins',sans-serif;
+  font-size:13px; color:rgb(156,156,156); padding:0 15px; box-sizing:border-box;
 }
 .contact-form-wrap textarea{
-  width:100%; height:100px; margin-top:10px; border:1px solid transparent; border-radius:15px;
+  width:100%; height:100px; margin-bottom:8px; border:1px solid transparent; border-radius:10px;
   background:rgb(252,252,252); box-shadow:0 4px 16px 4px rgba(171,171,171,0.15);
-  font-family:'Poppins',sans-serif; font-size:15px; color:rgb(173,173,173); padding:15px; resize:none;
+  font-family:'Poppins',sans-serif; font-size:13px; color:rgb(173,173,173); padding:12px 15px; resize:none; box-sizing:border-box;
 }
 .contact-checkbox{
-  display:flex; align-items:flex-start; gap:8px; font-size:12px; color:var(--text-default); line-height:1.5; margin-top:10px;
+  display:flex; align-items:flex-start; gap:8px; font-size:11px; color:#fff; line-height:1.5; margin-bottom:10px;
 }
+.contact-submit-row{display:flex; justify-content:flex-end;}
 .contact-submit{
   background:rgb(205,205,205); font-family:'Poppins',sans-serif; font-size:14px; color:#fff;
-  text-align:center; border-radius:6px; border:none; width:170px; height:45px; margin-top:10px; cursor:pointer;
+  text-align:center; border-radius:6px; border:none; width:170px; height:45px; cursor:pointer;
 }
 .contact-submit.active{background:var(--text-default);}
 .form-status{color:#fff; font-size:13px; margin-top:8px; min-height:18px;}
-.wave{display:block; width:100%; margin-top:20px;}
+.wave{display:block; width:100%;}
 
 /* WhatsApp floating button */
 .floating-wpp{position:fixed; bottom:15px; left:15px; z-index:1100;}
@@ -315,21 +325,22 @@ img{max-width:100%;display:block;}
 .floating-wpp-button i{color:#fff; font-size:28px;}
 
 /* ===== BOTTOM FOOTER ===== */
-.bottom-footer{background:#fff; padding:40px 10px;}
+.bottom-footer{background:#fff; padding:30px 20px;}
 .bottom-footer-inner{
-  display:flex; flex-wrap:wrap; justify-content:center; gap:20px; max-width:1200px; margin:0 auto;
+  display:flex; flex-wrap:wrap; align-items:flex-start; gap:30px; max-width:1200px; margin:0 auto;
 }
-.footer-logo img{width:180px;}
-.footer-contacts{display:flex; flex-wrap:wrap; gap:15px; margin-top:15px;}
+.footer-logo{flex-shrink:0;}
+.footer-logo img{width:80px;}
 .footer-contact-item{display:flex; align-items:flex-start; gap:8px;}
 .footer-contact-item .icon-box{
-  width:40px; height:40px; border-radius:10px; background:var(--text-default); color:#fff;
-  display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0;
+  width:36px; height:36px; border-radius:8px; background:var(--text-default); color:#fff;
+  display:flex; align-items:center; justify-content:center; font-size:14px; flex-shrink:0;
 }
-.footer-contact-item .label{font-size:14px; font-weight:bold; color:var(--text-default); margin:0;}
-.footer-contact-item .value{font-size:12px; font-weight:400; color:var(--text-default); margin:0; max-width:300px;}
-.footer-col h4{font-size:15px; font-weight:600; color:var(--text-default); margin:0 0 6px;}
-.footer-col p, .footer-col div{font-size:12px; font-weight:400; color:var(--text-default); margin:0 0 4px; cursor:pointer;}
+.footer-contact-item .label{font-size:12px; font-weight:bold; color:var(--text-default); margin:0;}
+.footer-contact-item .value{font-size:11px; font-weight:400; color:var(--text-default); margin:0; max-width:160px;}
+.footer-col{display:flex; flex-direction:column; gap:4px;}
+.footer-col h4{font-size:13px; font-weight:700; color:var(--text-default); margin:0 0 6px;}
+.footer-col p, .footer-col div{font-size:12px; font-weight:400; color:var(--text-default); margin:0; cursor:pointer;}
 .social-icons{display:flex; gap:10px; margin-top:8px;}
 .social-icons a{color:var(--text-default);}
 .social-icons i{font-size:20px; cursor:pointer;}
