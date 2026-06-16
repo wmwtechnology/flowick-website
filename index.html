@@ -17,21 +17,21 @@
     <img src="assets/logos/flowick-logo-nav.svg" alt="Flowick Logo">
     <button class="nav-toggle" aria-label="Menü"><i class="fa fa-bars"></i></button>
     <div class="nav-links">
-      <button>Ana Sayfa</button>
-      <button>Referanslar</button>
-      <button>Hakkımızda</button>
-      <button>Hizmetlerimiz</button>
-      <button>S.S.S</button>
+      <button data-scroll="anasayfa">Ana Sayfa</button>
+      <button data-scroll="referanslar">Referanslar</button>
+      <button data-scroll="hakkimizda">Hakkımızda</button>
+      <button data-scroll="hizmetlerimiz">Hizmetlerimiz</button>
+      <button data-scroll="sss">S.S.S</button>
       <button>Ürünler</button>
       <button>Kariyer</button>
       <button>Blog</button>
-      <div class="phone-icon"><i class="fa fa-phone"></i></div>
+      <div class="phone-icon" data-scroll="iletisim"><i class="fa fa-phone"></i></div>
     </div>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="anasayfa">
   <div class="hero-inner">
     <div class="hero-text">
       <h1>İş Akışlarınızı Dönüştürün</h1>
@@ -46,7 +46,7 @@
   </div>
 
   <!-- LOGOS CAROUSEL -->
-  <div class="logos-section">
+  <div class="logos-section" id="referanslar">
     <div class="logos-track">
       <div class="logo-card"><img src="assets/images/partner-logo-1.png" alt="logo"></div>
       <div class="logo-card"><img src="assets/images/partner-logo-2.png" alt="logo"></div>
@@ -81,7 +81,7 @@
   </div>
 
   <!-- ABOUT -->
-  <div class="about-section">
+  <div class="about-section" id="hakkimizda">
     <img class="about-logo" src="assets/logos/flowick-logo-about.svg" alt="Flowick Logo">
     <div class="about-text">
       <h2>Biz Kimiz?</h2>
@@ -127,7 +127,7 @@
   </div>
 
   <!-- TRACK SECTION -->
-  <div class="track-section">
+  <div class="track-section" id="hizmetlerimiz">
     <div class="track-inner">
       <img class="track-image" src="assets/images/track.svg" alt="">
       <div class="track-text">
@@ -193,7 +193,7 @@
   </div>
 
   <!-- FAQ -->
-  <div class="faq-section">
+  <div class="faq-section" id="sss">
     <div class="faq-heading"><h2>Sıkça Sorulan Sorular</h2></div>
     <div class="faq-list">
       <div class="faq-item">
@@ -235,7 +235,7 @@
   </div>
 
   <!-- CONTACT (orange) -->
-  <div class="contact-section">
+  <div class="contact-section" id="iletisim">
     <div class="floating-wpp">
       <a class="floating-wpp-button" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
         <i class="fa fa-whatsapp"></i>

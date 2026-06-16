@@ -7,6 +7,19 @@ if (navToggle && navLinks) {
   });
 }
 
+// Smooth scroll for nav buttons and phone icon
+document.querySelectorAll('[data-scroll]').forEach((el) => {
+  el.addEventListener('click', () => {
+    const target = document.getElementById(el.dataset.scroll);
+    if (target) {
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      const top = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+    if (navLinks) navLinks.classList.remove('open');
+  });
+});
+
 // FAQ accordion
 document.querySelectorAll('.faq-item').forEach((item) => {
   const head = item.querySelector('.faq-item-head');

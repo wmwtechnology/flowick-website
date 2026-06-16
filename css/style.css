@@ -4,6 +4,7 @@
   --primary: rgb(2,5,211);
   --footer-orange: rgb(251,168,0);
 }
+html{scroll-behavior:smooth;}
 *{box-sizing:border-box;}
 body{
   margin:0;
