@@ -378,3 +378,112 @@ img{max-width:100%;display:block;}
   .news-grid{grid-template-columns:1fr;}
   .why-tech-cards{grid-template-columns:1fr;}
 }
+
+/* ===== KVKK MODAL ===== */
+.kvkk-overlay{
+  display:none;
+  position:fixed; inset:0; z-index:9999;
+  background:rgba(0,0,0,0.55);
+  align-items:center; justify-content:center;
+  padding:20px;
+}
+.kvkk-overlay.active{ display:flex; }
+.kvkk-modal{
+  background:#fff;
+  border-radius:12px;
+  max-width:720px; width:100%;
+  max-height:88vh;
+  display:flex; flex-direction:column;
+  box-shadow:0 20px 60px rgba(0,0,0,0.25);
+}
+.kvkk-modal-header{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:20px 24px 16px;
+  border-bottom:1px solid rgba(0,0,0,0.1);
+  flex-shrink:0;
+}
+.kvkk-modal-header img{ height:36px; width:auto; }
+.kvkk-modal-close{
+  background:none; border:none; cursor:pointer;
+  font-size:22px; color:var(--text-default);
+  line-height:1; padding:4px 8px;
+  border-radius:4px; transition:background 0.15s;
+}
+.kvkk-modal-close:hover{ background:rgba(0,0,0,0.08); }
+.kvkk-modal-body{
+  overflow-y:auto;
+  padding:24px;
+  flex:1;
+}
+.kvkk-modal-body h2{
+  font-family:'Poppins',sans-serif;
+  font-size:16px; font-weight:700;
+  color:var(--text-default);
+  margin:0 0 20px; line-height:1.4;
+  text-align:center;
+}
+.kvkk-modal-body h3{
+  font-family:'Poppins',sans-serif;
+  font-size:14px; font-weight:700;
+  color:var(--text-default);
+  margin:20px 0 6px;
+}
+.kvkk-modal-body p, .kvkk-modal-body li{
+  font-family:'Open Sans',sans-serif;
+  font-size:13px; line-height:1.75;
+  color:var(--text-default);
+  margin:0 0 10px;
+}
+.kvkk-modal-body ul{
+  padding-left:20px; margin:0 0 10px;
+}
+.kvkk-link{
+  cursor:pointer; text-decoration:underline;
+}
+.kvkk-link:hover{ color:var(--accent); }
+
+@media(max-width:600px){
+  .kvkk-modal-body{ padding:16px; }
+  .kvkk-modal-body h2{ font-size:14px; }
+}
+
+/* ===== BELGE (SERTİFİKA) MODAL ===== */
+.belge-overlay{
+  display:none;
+  position:fixed; inset:0; z-index:9999;
+  background:rgba(0,0,0,0.65);
+  align-items:center; justify-content:center;
+  padding:20px;
+}
+.belge-overlay.active{ display:flex; }
+.belge-modal{
+  background:#fff;
+  border-radius:12px;
+  max-width:560px; width:100%;
+  display:flex; flex-direction:column;
+  box-shadow:0 20px 60px rgba(0,0,0,0.3);
+}
+.belge-modal-header{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 20px 12px;
+  border-bottom:1px solid rgba(0,0,0,0.1);
+  flex-shrink:0;
+}
+.belge-modal-header img{ height:32px; width:auto; }
+.belge-modal-body{
+  padding:24px;
+  display:flex; align-items:center; justify-content:center;
+}
+.belge-modal-body img{
+  max-width:100%; max-height:420px;
+  object-fit:contain;
+  border-radius:6px;
+}
+.cert-img{
+  cursor:pointer;
+  transition:transform 0.15s, box-shadow 0.15s;
+}
+.cert-img:hover{
+  transform:scale(1.08);
+  box-shadow:0 4px 16px rgba(0,0,0,0.18);
+}
