@@ -38,7 +38,7 @@
     <h1 class="blog-hero-title">FLOWİCK BLOG</h1>
     <div class="blog-hero-filters">
       <div class="blog-search-wrap">
-        <input type="text" placeholder="Aramak İstediğiniz Kelimeyi Yazın...">
+        <input id="blog-search" type="text" placeholder="Aramak İstediğiniz Kelimeyi Yazın..." autocomplete="off">
         <i class="fa fa-search"></i>
       </div>
       <div class="blog-categories">
@@ -54,10 +54,10 @@
 
 <!-- BLOG GRID -->
 <div class="blog-grid-wrap">
-  <div class="blog-grid">
+  <div class="blog-grid" id="blog-grid">
 
     <!-- Kart 1 -->
-    <div class="blog-card" style="background-image:url('https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=768,h=602,f=auto,dpr=2,fit=cover/f1729760404572x883864780729843200/11.png')">
+    <div class="blog-card" data-search="Dijital dönüşüm sürecinde dikkat edilmesi gerekenler nelerdir? Dijital dönüşümün şirketin genel iş stratejisiyle uyumlu ve başarılı bir şekilde uygulanması sağlanabilir ve rekabetin çok yoğun yaşandığı pazarınızda ön plana çıkabilirsiniz." style="background-image:url('https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=768,h=602,f=auto,dpr=2,fit=cover/f1729760404572x883864780729843200/11.png')">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <h2 class="blog-card-title">Dijital dönüşüm sürecinde dikkat edilmesi gerekenler nelerdir?</h2>
@@ -70,7 +70,7 @@
     </div>
 
     <!-- Kart 2 -->
-    <div class="blog-card" style="background-image:url('https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=768,h=602,f=auto,dpr=2,fit=cover/f1729760354395x784114729721329200/4.png')">
+    <div class="blog-card" data-search="Küçük İşletmelerin İnsan Kaynakları Departmanına İhtiyacı Var Mı? İnsan kaynakları İK departmanı genellikle büyük ölçekli şirketlerle ilişkilendirilir. Başlangıç aşamasındaki birçok startup için ise İK departmanı genellikle gereksiz bir lüks olarak değerlendirilebilir." style="background-image:url('https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=768,h=602,f=auto,dpr=2,fit=cover/f1729760354395x784114729721329200/4.png')">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <h2 class="blog-card-title">Küçük İşletmelerin İnsan Kaynakları Departmanına İhtiyacı Var Mı?</h2>
@@ -83,7 +83,7 @@
     </div>
 
     <!-- Kart 3 -->
-    <div class="blog-card" style="background-image:url('https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=768,h=602,f=auto,dpr=2,fit=cover/f1730444440215x370076720890034900/7.png')">
+    <div class="blog-card" data-search="İşinizi Teknolojiyle Hızlandırın Dijitalleşmenin Yönetimdeki Kullanımları Nelerdir? Bir zamanlar ofiste dosyalar taşınırken şimdi bulutta veriler uçuşuyor. Teknoloji hızla gelişirken iş dünyası da bu hıza ayak uydurmakta. Peki siz şirketinizi hala eski usullerle mi yönetiyorsunuz yoksa dijital dünyanın avantajlarından yararlanıyor musunuz?" style="background-image:url('https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=768,h=602,f=auto,dpr=2,fit=cover/f1730444440215x370076720890034900/7.png')">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <h2 class="blog-card-title">"İşinizi Teknolojiyle Hızlandırın" Dijitalleşmenin Yönetimdeki Kullanımları Nelerdir?</h2>
@@ -94,6 +94,8 @@
         <div class="blog-stat"><i class="fa fa-eye"></i><span>0</span></div>
       </div>
     </div>
+
+    <p class="blog-no-results" id="blog-no-results">Aramanızla eşleşen yazı bulunamadı.</p>
 
   </div>
 </div>

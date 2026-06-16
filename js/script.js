@@ -30,6 +30,24 @@ document.querySelectorAll('.faq-item').forEach((item) => {
   });
 });
 
+// Blog search
+const blogSearch = document.getElementById('blog-search');
+if (blogSearch) {
+  blogSearch.addEventListener('input', () => {
+    const q = blogSearch.value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.blog-card');
+    const noResults = document.getElementById('blog-no-results');
+    let visible = 0;
+    cards.forEach((card) => {
+      const text = (card.dataset.search || '').toLowerCase();
+      const match = !q || text.includes(q);
+      card.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+    if (noResults) noResults.style.display = visible === 0 ? 'block' : 'none';
+  });
+}
+
 // Contact form (static site - no backend, shows confirmation message)
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {

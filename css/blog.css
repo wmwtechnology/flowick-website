@@ -6,11 +6,11 @@
 .blog-hero {
   position: relative;
   width: 100%;
-  min-height: 400px;
+  min-height: 320px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 64px;
 }
 
 .blog-hero-bg {
@@ -42,7 +42,7 @@
   color: rgb(250, 64, 4);
   text-align: center;
   line-height: 1.4;
-  margin: 50px 0 0;
+  margin: 16px 0 0;
 }
 
 .blog-hero-filters {
@@ -218,6 +218,21 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
+}
+
+.blog-card.hidden {
+  display: none;
+}
+
+.blog-no-results {
+  display: none;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: rgb(9,23,71);
+  opacity: 0.5;
+  padding: 40px 0;
+  grid-column: 1 / -1;
 }
 
 /* Blog button active */
