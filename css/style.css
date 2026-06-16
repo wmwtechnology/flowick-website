@@ -275,7 +275,7 @@ img{max-width:100%;display:block;}
   margin-top:40px; position:relative;
 }
 .wave-top{
-  display:block; width:100%; transform:scaleY(-1); margin-bottom:10px; margin-top:-2px;
+  display:block; width:100%; margin-bottom:10px; margin-top:-2px;
 }
 .contact-inner{
   display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:20px;
