@@ -1,0 +1,91 @@
+.urunler-page {
+  background: #f5f6fa;
+}
+
+.urunler-main {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  min-height: 100vh;
+}
+
+.urunler-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.urun-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-left: 4px solid var(--card-color);
+  padding: 16px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.urun-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.14);
+  transform: translateY(-2px);
+}
+
+.urun-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--card-color);
+  line-height: 1.3;
+  min-height: 34px;
+}
+
+.urun-img-area {
+  flex: 1;
+  min-height: 120px;
+  border-radius: 8px;
+  background: #f8f9fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.urun-img-area img {
+  max-height: 110px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Active nav button */
+.urunler-page .nav-links button.active {
+  background: rgb(9,23,71);
+  color: #fff;
+  border-radius: 6px;
+}
+
+@media (max-width: 1024px) {
+  .urunler-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .urunler-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .urunler-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 12px;
+  }
+  .urun-title {
+    font-size: 11px;
+  }
+}
