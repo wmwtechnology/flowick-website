@@ -181,20 +181,19 @@ img{max-width:100%;display:block;}
   font-size:20px; font-weight:400; color:var(--text-default); letter-spacing:1px; word-spacing:5px; line-height:1.3; max-width:1000px; margin:0 auto;
 }
 .why-tech-cards{
-  display:flex; flex-wrap:wrap; justify-content:center; gap:65px 100px;
+  display:grid; grid-template-columns:repeat(2, 1fr); gap:30px;
   padding:20px 0;
 }
 .why-tech-card{
-  width:300px; height:300px; border-radius:20px;
+  border-radius:20px;
   box-shadow:0 4px 8px 2px rgb(205,205,205);
-  padding:40px 16px 16px 22px;
-  display:flex; flex-direction:column; gap:25px;
+  padding:32px 30px;
+  display:flex; flex-direction:column; gap:20px;
   color:#fff;
 }
-.why-tech-card h3{font-size:30px; font-weight:bold; text-align:center; margin:0; line-height:1.4;}
-.why-tech-card p{font-size:16px; font-weight:500; line-height:1.7; margin:0;}
+.why-tech-card h3{font-size:26px; font-weight:bold; text-align:center; margin:0; line-height:1.4;}
+.why-tech-card p{font-size:15px; font-weight:500; line-height:1.7; margin:0;}
 .card-security{background:var(--text-default);}
-.card-security h3{color:#fff;}
 .card-efficiency{background:rgba(250,64,4,0.85);}
 .card-flexibility{background:rgb(75,175,203);}
 .card-strategy{background:rgb(255,166,1);}
@@ -360,4 +359,5 @@ img{max-width:100%;display:block;}
   .hero-text h2{font-size:24px;}
   .logos-track .logo-card{width:220px;}
   .news-grid{grid-template-columns:1fr;}
+  .why-tech-cards{grid-template-columns:1fr;}
 }
