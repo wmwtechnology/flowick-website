@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flowick BPM - Ana Sayfa</title>
-<meta name="description" content="Flowick BPM ile iş süreçlerinizi tek ekrandan yönetin, verimliliğinizi artırın.">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700|Poppins:400,500,600,700" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowick — İş Süreçleri Yönetim Yazılımı</title>
+  <meta name="description" content="Flowick BPM ile iş süreçlerinizi tek ekrandan yönetin, verimliliğinizi artırın.">
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/flowick-logo-nav.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700|Poppins:400,500,600,700" rel="stylesheet">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="navbar-inner">
-    <img src="assets/logos/flowick-logo-nav.svg" alt="Flowick Logo" data-scroll="anasayfa" style="cursor:pointer;">
+    <img src="/assets/logos/flowick-logo-nav.svg" alt="Flowick Logo" data-link="/" style="cursor:pointer;">
     <button class="nav-toggle" aria-label="Menü"><i class="fa fa-bars"></i></button>
     <div class="nav-links">
       <button data-scroll="anasayfa">Ana Sayfa</button>
@@ -22,363 +22,103 @@
       <button data-scroll="hakkimizda">Hakkımızda</button>
       <button data-scroll="hizmetlerimiz">Hizmetlerimiz</button>
       <button data-scroll="sss">S.S.S</button>
-      <button onclick="window.location.href='urunler.html'">Ürünler</button>
-
-      <button onclick="window.location.href='blog.html'">Blog</button>
+      <button data-link="/urunler">Ürünler</button>
+      <button data-link="/blog">Blog</button>
       <div class="phone-icon" data-scroll="iletisim"><i class="fa fa-phone"></i></div>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero" id="anasayfa">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <h1>İş Akışlarınızı Dönüştürün</h1>
-      <h2>Geleceği Şimdi Yaşayın!</h2>
-      <p>Yazılımımız, iş süreçlerinin stratejik hedeflere uygunluğunu izlemek ve değerlendirmek için güçlü analitik ve raporlama araçları sunar. Bu, yöneticilere iş süreçlerini daha etkin bir şekilde yönetme ve stratejik kararlar alma yeteneği sağlar.</p>
-      <div class="hero-cta">
-        <button class="plus-btn"><i class="fa fa-plus"></i></button>
-        <span class="label">Bize Ulaşın</span>
-      </div>
+<!-- SAYFA İÇERİĞİ -->
+<main id="app"></main>
+
+<!-- BOTTOM FOOTER -->
+<div class="bottom-footer">
+  <div class="bottom-footer-inner">
+
+    <div class="footer-logo">
+      <img src="/assets/logos/flowick-logo-footer.svg" alt="Flowick Logo">
     </div>
-    <img class="hero-image" src="assets/images/hero.png" alt="">
-  </div>
 
-  <!-- LOGOS CAROUSEL -->
-  <div class="logos-section" id="referanslar">
-    <div class="logos-track">
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438456469x381837753681226300/ateco-industries-logo.png" alt="Ateco Industries"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/f1725438466147x408420037730634000/Bubble_Logo_no_code.svg.png" alt="Bubble"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438473778x496879454284380600/kentmeydani-logo.png" alt="Kent Meydanı"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438483672x707866493375712800/logo.png" alt="Evona"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438493849x446773333381409900/logo_black%402x.png" alt="Zapier"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438504853x255537479629709400/METROPOL%20SHIPPING%20LOGO-1.png" alt="Metropol Shipping"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438513553x111451249811334020/yavrupatilerlogo-1.png" alt="Yavru Patiler"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438551899x918359054952491600/https___e0c771e7ae3bd68159a239fb345fe0e3.cdn.bubble.io_f1722426808612x933120373654326300_akerosgb-logo-kopya.png" alt="Aker OSGB"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1727102337473x813747243679567600/paytr-removebg-preview.png" alt="PayTR"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1727102351558x757180717231174000/paratika-removebg.png" alt="Paratika"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1734046302263x402341241169523760/ARENA-BILGISAYAR-A.S.png" alt="Arena Bilgisayar A.Ş."></div>
-      <!-- duplicate set for seamless loop -->
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438456469x381837753681226300/ateco-industries-logo.png" alt="Ateco Industries"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/f1725438466147x408420037730634000/Bubble_Logo_no_code.svg.png" alt="Bubble"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438473778x496879454284380600/kentmeydani-logo.png" alt="Kent Meydanı"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438483672x707866493375712800/logo.png" alt="Evona"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438493849x446773333381409900/logo_black%402x.png" alt="Zapier"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438504853x255537479629709400/METROPOL%20SHIPPING%20LOGO-1.png" alt="Metropol Shipping"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438513553x111451249811334020/yavrupatilerlogo-1.png" alt="Yavru Patiler"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1725438551899x918359054952491600/https___e0c771e7ae3bd68159a239fb345fe0e3.cdn.bubble.io_f1722426808612x933120373654326300_akerosgb-logo-kopya.png" alt="Aker OSGB"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1727102337473x813747243679567600/paytr-removebg-preview.png" alt="PayTR"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1727102351558x757180717231174000/paratika-removebg.png" alt="Paratika"></div>
-      <div class="logo-card"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=256,h=179,f=auto,dpr=2,fit=contain/f1734046302263x402341241169523760/ARENA-BILGISAYAR-A.S.png" alt="Arena Bilgisayar A.Ş."></div>
-    </div>
-  </div>
-
-  <!-- APP PROMO -->
-  <div class="app-promo">
-    <div class="app-promo-text">
-      <p class="title-orange">Flowick BPM Sen Neredeysen,</p>
-      <p class="title-dark">Hemen Yanı Başında!</p>
-      <div class="app-promo-sub">
-        <p>Uygulamayı kullanmaya başlamak için hemen indir!</p>
-        <div class="down-icon"><i class="fa fa-angle-double-down"></i></div>
-      </div>
-      <div class="store-buttons">
-        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.mycompany.flowickbpm" target="_blank" rel="noopener">
-          <img src="assets/images/google-play.png" alt="">
-          <span>GOOGLE PLAY</span>
-        </a>
-        <a class="store-btn" href="https://apps.apple.com/us/app/flowick-bpm/id6736679156" target="_blank" rel="noopener">
-          <i class="fa fa-apple"></i>
-          <span>APP STORE</span>
-        </a>
-      </div>
-    </div>
-    <img class="app-promo-image" src="assets/images/app-promo.png" alt="">
-  </div>
-
-  <!-- ABOUT -->
-  <div class="about-section" id="hakkimizda">
-    <img class="about-logo" src="assets/logos/flowick-logo-about.svg" alt="Flowick Logo">
-    <div class="about-text">
-      <h2>Biz Kimiz?</h2>
-      <p>Biz, iş dünyasının zorluklarına çözüm sunan bir teknoloji şirketiyiz. Süreçlerinizi optimize ederek işinizi dönüştürmek için en yeni teknolojileri ve yenilikçi çözümleri bir araya getiriyoruz. Çalışanlarımızın farklı bakış açıları ve uzmanlıklarıyla bir araya gelerek, yaratıcı çözümler üretiyoruz. Müşteri odaklı yaklaşımımızla, iş akışlarınızı etkin bir şekilde yönetmenize ve rekabet avantajı elde etmenize yardımcı oluyoruz. İşinizi bir adım öteye taşımak, verimliliği artırmak ve başarıyı garantilemek için bizimle birlikte ileriye yol alın.</p>
-    </div>
-  </div>
-
-  <!-- FEATURE CARDS -->
-  <div class="feature-cards">
-    <div class="feature-card"><i class="fa fa-check"></i><span>Müşteri Memnuniyeti</span></div>
-    <div class="feature-card"><i class="fa fa-lock"></i><span>Maksimum Güvenlik</span></div>
-    <div class="feature-card"><i class="fa fa-group"></i><span>24 Farklı Sektör</span></div>
-    <div class="feature-card"><i class="fa fa-puzzle-piece"></i><span>Esneklik ve Uyum</span></div>
-  </div>
-
-  <!-- WHY TECH -->
-  <div class="why-tech">
-    <img class="why-tech-bg" src="assets/images/why-tech-bg.png" alt="">
-    <div class="why-tech-inner">
-      <div class="why-tech-heading">
-        <h2>Daha Çok Teknoloji İçin Sıra Sizde !</h2>
-        <p>Sektörün öncü firmaları, kurumlarının ihtiyaçlarına göre özelleştirilen Flowick BPM'i kullanarak insan kaynağını teknolojiyle güçlendiriyor.</p>
-      </div>
-      <div class="why-tech-cards">
-        <div class="why-tech-card card-security">
-          <h3>Güvenlik</h3>
-          <p>Şirketimiz, endüstri standartlarına uygun güvenlik protokollerini benimser ve çeşitli yöntemler kullanarak verilerin güvenliğini sağlar. Ayrıca, yetkilendirme seviyeleri ve erişim kontrolleri, sadece yetkili kullanıcıların belirli süreçlere erişebilmesini sağlayarak veri güvenliğini artırır.</p>
+    <div class="footer-col">
+      <div class="footer-contact-item">
+        <div class="icon-box"><i class="fa fa-phone"></i></div>
+        <div>
+          <p class="label">Telefon</p>
+          <p class="value">0850 307 3785</p>
         </div>
-        <div class="why-tech-card card-efficiency">
-          <h3>Verimliliği Artırma</h3>
-          <p>FlowickBPM, iş süreçlerini analiz, optimize ve otomatize ederek verimliliği artırır. Gelişmiş iş akışları ve süreç otomasyonu, tekrarlayan görevleri azaltır ve insan hatalarını en aza indirir.</p>
-        </div>
-        <div class="why-tech-card card-flexibility">
-          <h3>Hızlı Uyum ve Esneklik</h3>
-          <p>İş dünyası sürekli değişiyor ve FlowickBPM, şirketlerin hızlı bir şekilde değişen koşullara uyum sağlamasını kolaylaştırır. Esnek iş süreçleri ve otomatizasyon, şirketlerin pazar değişikliklerine ve müşteri taleplerine daha hızlı yanıt vermesine olanak tanır.</p>
-        </div>
-        <div class="why-tech-card card-strategy">
-          <h3>Stratejik Yönetim</h3>
-          <p>Yazılımımız, iş süreçlerinin stratejik hedeflere uygunluğunu izlemek ve değerlendirmek için güçlü analitik ve raporlama araçları sunar. Bu, yöneticilere iş süreçlerini daha etkin bir şekilde yönetme ve stratejik kararlar alma yeteneği sağlar.</p>
+      </div>
+      <div class="footer-contact-item">
+        <div class="icon-box"><i class="fa fa-envelope"></i></div>
+        <div>
+          <p class="label">E-posta</p>
+          <p class="value">info@flowick.com</p>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- TRACK SECTION -->
-  <div class="track-section" id="hizmetlerimiz">
-    <div class="track-inner">
-      <img class="track-image" src="assets/images/track.svg" alt="">
-      <div class="track-text">
-        <h2>İşlerinizi, Flowick BPM ile Tek Ekrandan Takip Edin!</h2>
-        <p>Yenilikçi yazılım ürünümüz, iş süreçlerinizi maksimum verimlilikle yönetmenizi sağlayan kapsamlı bir çözüm sunuyor. Tüm görevleri ve süreçleri tek bir kullanıcı dostu ekran üzerinden takip edebilme özelliği, iş akışlarınızı kolaylıkla yönetmenize olanak tanır. Hem mobil hem web platformları üzerinden erişilebilir olması, ekiplerinizin her an her yerden etkileşimde bulunmasını sağlar.. Bu yenilikçi çözüm, iş akışlarınızı yönetirken zamandan ve kaynaklardan tasarruf etmenize yardımcı olacak, iş süreçlerinizi daha etkili ve yönetilebilir hale getirecek bir araçtır.</p>
+    <div class="footer-col">
+      <div class="footer-contact-item">
+        <div class="icon-box"><i class="fa fa-location-arrow"></i></div>
+        <div>
+          <p class="label">Adres</p>
+          <p class="value">Küçükbakkalköy Mah. Defne Sk. Flora Residance, No: 1, İç Kapı No: 365 Ataşehir/İSTANBUL</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- STATS -->
-  <div class="stats-section">
-    <div class="stat-card">
-      <p class="stat-number" style="color:rgb(255,127,63);">%64</p>
-      <p class="stat-title">Verimlilik Artışı</p>
-      <hr>
-      <p class="stat-desc">Harita bazlı rut planlama ile %64 verimlilik artışı</p>
+    <div class="footer-col footer-col-center">
+      <h4>KVKK</h4>
+      <div class="kvkk-link">KVKK Aydınlatma Metni</div>
+      <div class="gizlilik-link">Gizlilik Politikası</div>
+      <div class="cerez-link">Çerez Politikası</div>
     </div>
-    <div class="stat-card">
-      <p class="stat-number" style="color:rgb(37,85,249);">%97</p>
-      <p class="stat-title">Zaman Tasarrufu</p>
-      <hr>
-      <p class="stat-desc">Web tabanlı dijital arşiv ile verilere erişimde lokasyon özgürlüğü ve %97 zaman kazancı.</p>
-    </div>
-    <div class="stat-card">
-      <p class="stat-number" style="color:rgb(255,90,242);">%82</p>
-      <p class="stat-title">Hata Azalışı</p>
-      <hr>
-      <p class="stat-desc">QR kodlu iş yönetimi sayesinde %82 hata azalışı</p>
-    </div>
-    <div class="stat-card">
-      <p class="stat-number" style="color:rgb(99,234,238);">%32</p>
-      <p class="stat-title">İş Yükünde Azalma</p>
-      <hr>
-      <p class="stat-desc">Tüm işlemlerin mobil uygulamada da yürütülebilmesi ile operasyonel iş yükünde %32 azalış.</p>
-    </div>
-    <div class="stat-card">
-      <p class="stat-number" style="color:rgb(250,38,51);">%35</p>
-      <p class="stat-title">Stratejik Karar</p>
-      <hr>
-      <p class="stat-desc">İndeks yönetimi yapısı sayesinde stratejik karar alış hızında %35 artış</p>
-    </div>
-  </div>
 
-  <!-- FAQ -->
-  <div class="faq-section" id="sss">
-    <div class="faq-heading"><h2>Sıkça Sorulan Sorular</h2></div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-item-head">
-          <span>FlowickBPM Nedir ve Nasıl Çalışır?</span>
-          <button><i class="fa fa-plus-circle"></i></button>
-        </div>
-        <p class="faq-answer">FlowickBPM, iş süreçlerinizi planlama, takip ve raporlama adımlarıyla uçtan uca yönetmenizi sağlayan bulut tabanlı bir iş akışı (BPM) yazılımıdır. Web ve mobil üzerinden erişilebilir.</p>
-      </div>
-      <div class="faq-item">
-        <div class="faq-item-head">
-          <span>Neden FlowickBPM Yazılımına İhtiyaç Duyarım?</span>
-          <button><i class="fa fa-plus-circle"></i></button>
-        </div>
-        <p class="faq-answer">Manuel ve dağınık süreçleri tek bir platformda toplayarak verimliliği artırır, hata oranını azaltır ve yönetime gerçek zamanlı görünürlük sağlar.</p>
-      </div>
-      <div class="faq-item">
-        <div class="faq-item-head">
-          <span>Hangi İş Süreçleri FlowickBPM ile Yönetilebilir?</span>
-          <button><i class="fa fa-plus-circle"></i></button>
-        </div>
-        <p class="faq-answer">İnsan kaynakları, satın alma, stok ve envanter, proje, görev, müşteri ilişkileri, üretim, kalite kontrol, doküman, finans ve lojistik gibi birçok süreç FlowickBPM modülleriyle yönetilebilir.</p>
-      </div>
-      <div class="faq-item">
-        <div class="faq-item-head">
-          <span>FlowickBPM Yazılımı Nasıl Kurulur ve Entegre Edilir?</span>
-          <button><i class="fa fa-plus-circle"></i></button>
-        </div>
-        <p class="faq-answer">Kurulum gerektirmeyen bulut tabanlı bir çözümdür; ekibimiz ihtiyaçlarınıza göre kurulum ve entegrasyon sürecinde size eşlik eder.</p>
-      </div>
-      <div class="faq-item">
-        <div class="faq-item-head">
-          <span>Ne Tür Güvenlik Özelliklerine Sahiptir?</span>
-          <button><i class="fa fa-plus-circle"></i></button>
-        </div>
-        <p class="faq-answer">Yetkilendirme seviyeleri, erişim kontrolleri ve endüstri standartlarına uygun güvenlik protokolleri ile verileriniz korunur.</p>
+    <div class="footer-col footer-col-center">
+      <h4>Sosyal Medya</h4>
+      <p style="cursor:default;">Bizi Takipte Kal</p>
+      <div class="social-icons">
+        <a href="#" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+        <a href="#" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/flowick-teknoloji/posts/?feedView=all" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/flowickteknoloji/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
       </div>
     </div>
-  </div>
 
-  <!-- CONTACT (orange) -->
-  <div class="contact-section" id="iletisim">
-    <div class="floating-wpp">
-      <a class="floating-wpp-button" href="https://wa.me/905494357255" target="_blank" rel="noopener" aria-label="WhatsApp">
-        <i class="fa fa-whatsapp"></i>
+    <div class="footer-col">
+      <a class="store-mini" href="https://play.google.com/store/apps/details?id=com.mycompany.flowickbpm" target="_blank" rel="noopener">
+        <img src="/assets/images/google-play.png" alt="">
+        <div>
+          <p class="store-title">GOOGLE PLAY'den</p>
+          <p class="store-sub">İNDİREBİLİRSİNİZ</p>
+        </div>
+      </a>
+      <a class="store-mini" href="https://apps.apple.com/us/app/flowick-bpm/id6736679156" target="_blank" rel="noopener">
+        <div class="apple-icon"><i class="fa fa-apple"></i></div>
+        <div>
+          <p class="store-title">APP STORE'dan</p>
+          <p class="store-sub">İNDİREBİLİRSİNİZ</p>
+        </div>
       </a>
     </div>
-    <svg class="wave wave-top" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-      <path opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
-      <path opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
-      <path d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
-    </svg>
-    <div class="contact-inner">
-      <img class="contact-image" src="assets/images/contact.png" alt="">
-      <form class="contact-form-wrap contact-form">
-        <h2>İletişim</h2>
-        <div class="contact-row">
-          <input type="text" name="ad" placeholder="Ad" required>
-          <input type="text" name="soyad" placeholder="Soyad" required>
-          <input type="tel" name="telefon" placeholder="Telefon">
-          <input type="email" name="eposta" placeholder="E-Posta" required>
-          <select name="urun">
-            <option selected disabled>Ürün Seçiniz</option>
-            <option>Organizasyon Yönetimi</option>
-            <option>İnsan Kaynakları Yönetimi</option>
-            <option>Avans Masraf Yönetimi</option>
-            <option>Görev Yönetimi</option>
-            <option>Ürün ve Envanter Yönetimi</option>
-            <option>Stok Yönetimi</option>
-            <option>Müşteri İlişkileri Yönetimi</option>
-            <option>PDKS</option>
-            <option>Puantaj ve Hakedişler</option>
-            <option>Proje Yönetimi</option>
-            <option>Hedef Yönetimi</option>
-            <option>Satın Alma Yönetimi</option>
-            <option>Üretim Yönetimi</option>
-            <option>Kalite Kontrol Yönetimi</option>
-            <option>Malzeme Tedarik Planlama</option>
-            <option>Finans Yönetimi</option>
-            <option>Değerlendirme Yönetimi</option>
-            <option>Hatırlatma Yönetimi</option>
-            <option>Eğitim Yönetimi</option>
-            <option>Lojistik Yönetimi</option>
-            <option>İntranet</option>
-          </select>
-        </div>
-        <input class="contact-konu" type="text" name="konu" placeholder="Konu Başlığı">
-        <textarea name="mesaj" placeholder="Mesaj"></textarea>
-        <label class="contact-checkbox">
-          <input type="checkbox" required>
-          <span>Aydınlatma Metni kapsamında kimlik ve iletişim verilerimin Flowick Teknoloji Hizmetleri Anonim Şirketi tarafından hizmetlerinin tanıtımı, etkinlik ve haberlere ilişkin bilgilendirmelerin yapılması amacıyla işlenmesini ve bununla sınırlı olarak hizmet alınan üçüncü taraflar ile paylaşılmasını ve e-posta adresime reklam, tanıtım ve bilgilendirme vb. ticari elektronik ileti gönderilmesini kabul ediyorum.</span>
-        </label>
-        <div class="contact-submit-row">
-          <button type="submit" class="contact-submit">Gönder</button>
-        </div>
-        <div class="form-status"></div>
-      </form>
+
+    <div class="footer-col footer-col-center">
+      <h4>Belgelerimiz</h4>
+      <div class="cert-row">
+        <img class="cert-img" src="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/cdn-cgi/image/w=64,h=64,f=auto,dpr=1.5,fit=contain/f1725387623375x927219198404506400/pngwing.com.png" alt="Sertifika" data-full="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/f1725387623375x927219198404506400/pngwing.com.png">
+        <img class="cert-img" src="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/cdn-cgi/image/w=64,h=64,f=auto,dpr=1.5,fit=contain/f1725387493547x662256367993890200/27701.png" alt="ISO 27701" data-full="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/f1725387493547x662256367993890200/27701.png">
+        <img class="cert-img" src="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/cdn-cgi/image/w=64,h=64,f=auto,dpr=1.5,fit=contain/f1725387461012x973826346546947800/iso-9001-certified-logo-AC594FAD01-seeklogo.com.png" alt="ISO 9001" data-full="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/f1725387461012x973826346546947800/iso-9001-certified-logo-AC594FAD01-seeklogo.com.png">
+      </div>
     </div>
+
   </div>
-
-  <!-- BOTTOM FOOTER -->
-  <div class="bottom-footer">
-    <div class="bottom-footer-inner">
-
-      <div class="footer-logo">
-        <img src="assets/logos/flowick-logo-footer.svg" alt="Flowick Logo">
-      </div>
-
-      <div class="footer-col">
-        <div class="footer-contact-item">
-          <div class="icon-box"><i class="fa fa-phone"></i></div>
-          <div>
-            <p class="label">Telefon</p>
-            <p class="value">0850 307 3785</p>
-          </div>
-        </div>
-        <div class="footer-contact-item">
-          <div class="icon-box"><i class="fa fa-envelope"></i></div>
-          <div>
-            <p class="label">E-posta</p>
-            <p class="value">info@flowick.com</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <div class="footer-contact-item">
-          <div class="icon-box"><i class="fa fa-location-arrow"></i></div>
-          <div>
-            <p class="label">Adres</p>
-            <p class="value">Küçükbakkalköy Mah. Defne Sk. Flora Residance,  No: 1, İç Kapı No: 365 Ataşehir/İSTANBUL</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-col footer-col-center">
-        <h4>KVKK</h4>
-        <div class="kvkk-link">KVKK Aydınlatma Metni</div>
-        <div class="gizlilik-link">Gizlilik Politikası</div>
-        <div class="cerez-link">Çerez Politikası</div>
-      </div>
-
-      <div class="footer-col footer-col-center">
-        <h4>Sosyal Medya</h4>
-        <p style="cursor:default;">Bizi Takipte Kal</p>
-        <div class="social-icons">
-          <a href="#" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
-          <a href="#" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/company/flowick-teknoloji/posts/?feedView=all" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/flowickteknoloji/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <a class="store-mini" href="https://play.google.com/store/apps/details?id=com.mycompany.flowickbpm" target="_blank" rel="noopener">
-          <img src="assets/images/google-play.png" alt="">
-          <div>
-            <p class="store-title">GOOGLE PLAY'den</p>
-            <p class="store-sub">İNDİREBİLİRSİNİZ</p>
-          </div>
-        </a>
-        <a class="store-mini" href="https://apps.apple.com/us/app/flowick-bpm/id6736679156" target="_blank" rel="noopener">
-          <div class="apple-icon"><i class="fa fa-apple"></i></div>
-          <div>
-            <p class="store-title">APP STORE'dan</p>
-            <p class="store-sub">İNDİREBİLİRSİNİZ</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="footer-col footer-col-center">
-        <h4>Belgelerimiz</h4>
-        <div class="cert-row">
-          <img class="cert-img" src="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/cdn-cgi/image/w=64,h=64,f=auto,dpr=1.5,fit=contain/f1725387623375x927219198404506400/pngwing.com.png" alt="Sertifika" data-full="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/f1725387623375x927219198404506400/pngwing.com.png">
-          <img class="cert-img" src="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/cdn-cgi/image/w=64,h=64,f=auto,dpr=1.5,fit=contain/f1725387493547x662256367993890200/27701.png" alt="ISO 27701" data-full="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/f1725387493547x662256367993890200/27701.png">
-          <img class="cert-img" src="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/cdn-cgi/image/w=64,h=64,f=auto,dpr=1.5,fit=contain/f1725387461012x973826346546947800/iso-9001-certified-logo-AC594FAD01-seeklogo.com.png" alt="ISO 9001" data-full="https://8e8013394bea5bdce6507927f51d87d8.cdn.bubble.io/f1725387461012x973826346546947800/iso-9001-certified-logo-AC594FAD01-seeklogo.com.png">
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</section>
+</div>
 
 <!-- ÇEREZ POLİTİKASI MODAL -->
 <div class="kvkk-overlay" id="cerez-overlay">
   <div class="kvkk-modal">
     <div class="kvkk-modal-header">
-      <img src="assets/logos/flowick-logo-nav.svg" alt="Flowick Logo">
+      <img src="/assets/logos/flowick-logo-nav.svg" alt="Flowick Logo">
       <button class="kvkk-modal-close" id="cerez-close" aria-label="Kapat">&times;</button>
     </div>
     <div class="kvkk-modal-body">
@@ -445,7 +185,7 @@
 <div class="belge-overlay" id="belge-overlay">
   <div class="belge-modal">
     <div class="belge-modal-header">
-      <img src="assets/logos/flowick-logo-nav.svg" alt="Flowick Logo">
+      <img src="/assets/logos/flowick-logo-nav.svg" alt="Flowick Logo">
       <button class="kvkk-modal-close" id="belge-close" aria-label="Kapat">&times;</button>
     </div>
     <div class="belge-modal-body">
@@ -458,7 +198,7 @@
 <div class="kvkk-overlay" id="gizlilik-overlay">
   <div class="kvkk-modal">
     <div class="kvkk-modal-header">
-      <img src="assets/logos/flowick-logo-nav.svg" alt="Flowick Logo">
+      <img src="/assets/logos/flowick-logo-nav.svg" alt="Flowick Logo">
       <button class="kvkk-modal-close" id="gizlilik-close" aria-label="Kapat">&times;</button>
     </div>
     <div class="kvkk-modal-body">
@@ -488,7 +228,7 @@
 <div class="kvkk-overlay" id="kvkk-overlay">
   <div class="kvkk-modal">
     <div class="kvkk-modal-header">
-      <img src="assets/logos/flowick-logo-nav.svg" alt="Flowick Logo">
+      <img src="/assets/logos/flowick-logo-nav.svg" alt="Flowick Logo">
       <button class="kvkk-modal-close" id="kvkk-close" aria-label="Kapat">&times;</button>
     </div>
     <div class="kvkk-modal-body">
@@ -497,29 +237,17 @@
       <h3>1. Veri Sorumlusuna İlişkin Bilgiler</h3>
       <p>Kanun uyarınca Flowick Teknoloji Hizmetleri Anonim Şirketi Veri Sorumlusudur.</p>
       <h3>2. Kişisel Verilerin İşlenme Amaçları</h3>
-      <p>Toplanan kişisel verileriniz, Şirket tarafından acil durum yönetimi süreçlerinin yürütülmesi, bilgi güvenliği süreçlerinin yürütülmesi, denetim/etik faaliyetlerinin yürütülmesi, erişim yetkilerinin yürütülmesi, faaliyetlerin mevzuata uygun yürütülmesi, finans ve muhasebe işlerinin yürütülmesi, firma/ürün/hizmetlere bağlılık süreçlerinin yürütülmesi, fiziksel mekan güvenliğinin temini, görevlendirme süreçlerinin yürütülmesi, hukuk işlerinin takibi ve yürütülmesi, iç denetim/soruşturma/istihbarat faaliyetlerinin yürütülmesi, iletişim faaliyetlerinin yürütülmesi, iş faaliyetlerinin yürütülmesi/denetimi, iş sağlığı/güvenliği faaliyetlerinin yürütülmesi, iş süreçlerinin iyileştirilmesine yönelik önerilerin alınması ve değerlendirilmesi, iş sürekliliğinin sağlanması faaliyetlerinin yürütülmesi, lojistik faaliyetlerinin yürütülmesi, mal/hizmet satın alım süreçlerinin yürütülmesi, mal/hizmet satış sonrası destek hizmetlerinin yürütülmesi, mal/hizmet satış süreçlerinin yürütülmesi, mal/hizmet üretim ve operasyon süreçlerinin yürütülmesi, müşteri ilişkileri yönetimi süreçlerinin yürütülmesi, müşteri memnuniyetine yönelik aktivitelerin yürütülmesi, organizasyon ve etkinlik yönetimi, pazarlama analiz çalışmalarının yürütülmesi, reklam/kampanya/promosyon süreçlerinin yürütülmesi, risk yönetimi süreçlerinin yürütülmesi, saklama ve arşiv faaliyetlerinin yürütülmesi, sosyal sorumluluk ve sivil toplum aktivitelerinin yürütülmesi, sözleşme süreçlerinin yürütülmesi, stratejik planlama faaliyetlerinin yürütülmesi, talep/şikayetlerin takibi, taşınır mal ve kaynakların güvenliğinin temini, ürün/hizmetlerin pazarlama süreçlerinin yürütülmesi, veri sorumlusu operasyonlarının güvenliğinin temini, yatırım süreçlerinin yürütülmesi, yetkili kişi, kurum ve kuruluşlara bilgi verilmesi, yönetim faaliyetlerinin yürütülmesi, ziyaretçi kayıtlarının oluşturulması ve takibi amaçları ile işlenecektir. Bununla birlikte, tarafımıza kişisel verilerinizin işlenmesine ilişkin onay vermeniz halinde, söz konusu kişisel verileriniz, ürün ve hizmetlerimizin ihtiyaçlarınız ve istekleriniz doğrultusunda özelleştirilebilmesi, ürün ve hizmetler hakkında memnuniyetinizin ölçülmesi, istek ve ihtiyaçlarınız doğrultusunda ürün ve hizmetlerimizin geliştirilmesi, çeşitlendirilmesi, şirketin ve bağlı şirket ve iştiraklerinin faaliyetleri konusunda tanıtım yapılabilmesi ve bilgi verilebilmesi, pazarlama analiz çalışmalarının yapılması, kişiye özel kampanya, reklam, promosyon çalışmalarının gerçekleştirilmesi, iş başvurularının değerlendirilebilmesi amaçlarıyla Kanun'un 5. ve 6. maddelerinde belirtilen kişisel veri işleme şartları ve amaçları dâhilinde Kanun'da belirtilen sınırlar çerçevesinde hukuka, dürüstlük kurallarına uygun ve işbu amaçlarla her daim bağlantılı, sınırlı ve ölçülü şekilde işlenmektedir.</p>
+      <p>Toplanan kişisel verileriniz, Şirket tarafından acil durum yönetimi süreçlerinin yürütülmesi, bilgi güvenliği süreçlerinin yürütülmesi, denetim/etik faaliyetlerinin yürütülmesi, erişim yetkilerinin yürütülmesi, faaliyetlerin mevzuata uygun yürütülmesi, finans ve muhasebe işlerinin yürütülmesi, firma/ürün/hizmetlere bağlılık süreçlerinin yürütülmesi, fiziksel mekan güvenliğinin temini, görevlendirme süreçlerinin yürütülmesi, hukuk işlerinin takibi ve yürütülmesi, iç denetim/soruşturma/istihbarat faaliyetlerinin yürütülmesi, iletişim faaliyetlerinin yürütülmesi, iş faaliyetlerinin yürütülmesi/denetimi, iş sağlığı/güvenliği faaliyetlerinin yürütülmesi, iş süreçlerinin iyileştirilmesine yönelik önerilerin alınması ve değerlendirilmesi, iş sürekliliğinin sağlanması faaliyetlerinin yürütülmesi, lojistik faaliyetlerinin yürütülmesi, mal/hizmet satın alım süreçlerinin yürütülmesi, mal/hizmet satış sonrası destek hizmetlerinin yürütülmesi, mal/hizmet satış süreçlerinin yürütülmesi, mal/hizmet üretim ve operasyon süreçlerinin yürütülmesi, müşteri ilişkileri yönetimi süreçlerinin yürütülmesi, müşteri memnuniyetine yönelik aktivitelerin yürütülmesi, organizasyon ve etkinlik yönetimi, pazarlama analiz çalışmalarının yürütülmesi, reklam/kampanya/promosyon süreçlerinin yürütülmesi, risk yönetimi süreçlerinin yürütülmesi, saklama ve arşiv faaliyetlerinin yürütülmesi, sosyal sorumluluk ve sivil toplum aktivitelerinin yürütülmesi, sözleşme süreçlerinin yürütülmesi, stratejik planlama faaliyetlerinin yürütülmesi, talep/şikayetlerin takibi, taşınır mal ve kaynakların güvenliğinin temini, ürün/hizmetlerin pazarlama süreçlerinin yürütülmesi, veri sorumlusu operasyonlarının güvenliğinin temini, yatırım süreçlerinin yürütülmesi, yetkili kişi, kurum ve kuruluşlara bilgi verilmesi, yönetim faaliyetlerinin yürütülmesi, ziyaretçi kayıtlarının oluşturulması ve takibi amaçları ile işlenecektir.</p>
       <h3>3. Kişisel Verilerin Aktarılması</h3>
       <p>Kişisel verileriniz yukarıda belirtilen amaçlar dahilinde, Kanun'un 8. ve 9. maddesinde belirtilen şartlara uygun olarak başta kanunen yetkili kamu kuruluşlarına, adli ve idari makamlara, sair mevzuatta izin verilen özel hukuk tüzel ve gerçek kişilerine, Şirket'i denetime yetkili kurum ve kuruluşlara, ödemelerin ve mali yükümlülüklerin yerine getirilmesi adına anlaşmalı olunan ödeme kuruluşlarına, Şirket'in faaliyetlerinin yürütülmesi ve geliştirilmesi için hizmet alınan veya işbirliği içerisinde olunan iş ortaklarına ve sadece gerektiğinde Şirket'in tedarikçilerine Kanun'da belirtilen veri güvenliği tedbirleri alınmak suretiyle aktarılmaktadır.</p>
       <h3>4. Kişisel Verilerin Toplanma Yöntemi ve Hukuki Sebebi</h3>
-      <p>Kişisel verileriniz, Şirket'in yetkili birim ve çalışanları tarafından otomatik ve otomatik olmayan yöntemlerle, sözlü, yazılı veya elektronik ortamda toplanmaktadır. Bu kapsamda kimlik, iletişim, lokasyon, özlük, hukuki işlem, müşteri işlem, fiziksel mekân güvenliği, işlem güvenliği, risk yönetimi, finans, mesleki deneyim, pazarlama, görsel ve işitsel kayıtlar kategorisinde yer alan; ad, soyad, telefon no, mail adresi ve CV'nizde yer alan kişisel veriler; Kanun'un 5. Maddesinin ikinci fıkrasında gösterilen bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olmasından dolayı sözleşmenin taraflarına ait kişisel verilerin işlenmesinin zorunlu olması, veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi için veri işlemenin zorunlu olması, ilgili kişinin kendisi tarafından alenileştirilmiş olması ve ilgili kişinin temel hak ve özgürlüklerinize zarar vermemek kaydıyla Şirket'in meşru menfaatleri için veri işlemenin zorunlu olması hukuki sebeplerine dayalı olarak işlenmektedir.</p>
+      <p>Kişisel verileriniz, Şirket'in yetkili birim ve çalışanları tarafından otomatik ve otomatik olmayan yöntemlerle, sözlü, yazılı veya elektronik ortamda toplanmaktadır. Bu kapsamda kimlik, iletişim, lokasyon, özlük, hukuki işlem, müşteri işlem, fiziksel mekân güvenliği, işlem güvenliği, risk yönetimi, finans, mesleki deneyim, pazarlama, görsel ve işitsel kayıtlar kategorisinde yer alan; ad, soyad, telefon no, mail adresi ve CV'nizde yer alan kişisel veriler işlenmektedir.</p>
       <h3>5. Veri Sahiplerinin Kanun Kapsamındaki Hakları</h3>
-      <p>Dilediğiniz zaman Flowick'e başvurarak;</p>
-      <ul>
-        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme,</li>
-        <li>Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme,</li>
-        <li>Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
-        <li>Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme,</li>
-        <li>Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,</li>
-        <li>Kanun'un 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerin silinmesini veya yok edilmesini isteme,</li>
-        <li>Kanun'un 11. maddesinin (d) ve (e) bentleri uyarınca yapılan işlemlerin, kişisel verilerinizin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
-        <li>İşlenen verilerinizin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kendiniz aleyhine bir sonucun ortaya çıkmasına itiraz etme,</li>
-        <li>Kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme,</li>
-      </ul>
-      <p>haklarınızı kullanmayı talep edebilirsiniz. Elektronik ortamda doldurduğunuz başvuru formunu mobil imzanızla, güvenli elektronik imzanızla imzaladıktan sonra KEP adresinizi veya Kurum'un veri kayıt sisteminde halihazırda kayıtlı olan e-posta adresinizi kullanarak <strong>info@flowick.com</strong> adresine iletebilirsiniz. Flowick, bu kapsamdaki taleplere yazılı olarak cevap verilecekse, on sayfaya kadar ücret almadan; on sayfanın üzerindeki her sayfa için Kişisel Verileri Koruma Kurulu tarafından belirlenen tarifedeki ücreti alarak yanıtlandıracaktır. Başvuruya cevabın CD, flash bellek gibi bir kayıt ortamında verilmesi halinde Kurum tarafından talep edilebilecek ücret kayıt ortamının maliyetini geçemeyecektir.</p>
+      <p>Dilediğiniz zaman Flowick'e başvurarak kişisel verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, işlenme amacını öğrenme, aktarıldığı üçüncü kişileri bilme, düzeltilmesini isteme, silinmesini isteme ve diğer haklarınızı kullanmayı talep edebilirsiniz. Başvurularınızı <strong>info@flowick.com</strong> adresine iletebilirsiniz.</p>
     </div>
   </div>
 </div>
 
-<script src="js/script.js"></script>
+<script type="module" src="/src/main.ts"></script>
 </body>
 </html>
