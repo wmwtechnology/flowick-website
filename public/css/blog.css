@@ -1,5 +1,17 @@
 .blog-page {
   background: #fff;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 104px 0 60px;
+}
+
+.blog-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* ===== HERO ===== */
@@ -259,5 +271,8 @@
   }
   .blog-hero-title {
     font-size: 26px;
+  }
+  .blog-page {
+    padding: 104px 10px 60px;
   }
 }
