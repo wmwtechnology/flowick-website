@@ -80,13 +80,41 @@ if (belgeOverlay) {
   });
 }
 
-// Contact form (static site - no backend, shows confirmation message)
+const WORKER_URL = 'https://flowick-contact.developer-70b.workers.dev';
+
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const status = contactForm.querySelector('.form-status');
-    status.textContent = 'Mesajınız alındı, en kısa sürede size dönüş yapacağız.';
-    contactForm.reset();
+    const btn = contactForm.querySelector('.contact-submit');
+
+    const data = Object.fromEntries(new FormData(contactForm).entries());
+
+    btn.disabled = true;
+    status.textContent = 'Gönderiliyor...';
+    status.style.color = '';
+
+    try {
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const json = await res.json();
+      if (res.ok && json.success) {
+        status.textContent = 'Mesajınız alındı, en kısa sürede size dönüş yapacağız.';
+        status.style.color = '#2ecc71';
+        contactForm.reset();
+      } else {
+        status.textContent = json.error || 'Bir hata oluştu, lütfen tekrar deneyin.';
+        status.style.color = '#e74c3c';
+      }
+    } catch {
+      status.textContent = 'Bağlantı hatası, lütfen tekrar deneyin.';
+      status.style.color = '#e74c3c';
+    } finally {
+      btn.disabled = false;
+    }
   });
 }
