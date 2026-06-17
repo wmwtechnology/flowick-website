@@ -1,0 +1,23 @@
+{
+  "name": "flowick-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "cf:dev": "npm run build && wrangler pages dev dist",
+    "deploy": "wrangler pages deploy dist"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260601.1",
+    "@types/node": "^22.0.0",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.9",
+    "wrangler": "^4.101.0"
+  }
+}

@@ -1,0 +1,39 @@
+import { getContainer } from '../router';
+
+export function renderProducts(_params: Record<string, string>): void {
+  const container = getContainer();
+  container.innerHTML = productsHTML();
+}
+
+function productsHTML(): string {
+  return `
+    <main class="urunler-main">
+      <div class="urunler-grid">
+        <div class="urun-card" style="--card-color:rgb(117,81,204)"><span class="urun-title">İnsan Kaynakları</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726842181525x160716340913672260/I%CC%87k.png" alt="İnsan Kaynakları"></div></div>
+        <div class="urun-card" style="--card-color:rgb(53,90,130)"><span class="urun-title">İntranet</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726842305288x254459779780866530/intranet.png" alt="İntranet"></div></div>
+        <div class="urun-card" style="--card-color:rgb(0,155,87)"><span class="urun-title">Organizasyon Yönetimi</span><div class="urun-img-area"></div></div>
+        <div class="urun-card" style="--card-color:rgb(17,142,147)"><span class="urun-title">Avans Masraf Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726842426368x913354909867041500/avans.png" alt="Avans Masraf Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(254,1,100)"><span class="urun-title">Görev Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726842928415x428400179107342850/go%CC%86rev.png" alt="Görev Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(255,164,0)"><span class="urun-title">Ürün Envanter Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726843557727x184695161413056960/123.png" alt="Ürün Envanter Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(40,44,59)"><span class="urun-title">Stok Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726843608699x612525448963883200/stok.png" alt="Stok Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(53,90,130)"><span class="urun-title">Müşteri İlişkileri Modülü</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726847288540x132834987848240430/mu%CC%88steri%20ilis%CC%A7kileri.png" alt="Müşteri İlişkileri Modülü"></div></div>
+        <div class="urun-card" style="--card-color:rgb(0,155,87)"><span class="urun-title">PDKS</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726847378671x585922964073878500/pdks.png" alt="PDKS"></div></div>
+        <div class="urun-card" style="--card-color:rgb(117,81,204)"><span class="urun-title">Puantaj ve Hakedişler</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726847438106x731217862828900600/puantaj.png" alt="Puantaj ve Hakedişler"></div></div>
+        <div class="urun-card" style="--card-color:rgb(17,142,147)"><span class="urun-title">Proje Yönetimi</span><div class="urun-img-area"></div></div>
+        <div class="urun-card" style="--card-color:rgb(254,1,100)"><span class="urun-title">Hedef Yönetimi</span><div class="urun-img-area"></div></div>
+        <div class="urun-card" style="--card-color:rgb(255,164,0)"><span class="urun-title">Satın Alma Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726847894361x678469571100974300/sat%C4%B1n%20alma.png" alt="Satın Alma Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(40,44,59)"><span class="urun-title">Üretim Yönetimi</span><div class="urun-img-area"></div></div>
+        <div class="urun-card" style="--card-color:rgb(53,90,130)"><span class="urun-title">Kalite ve Kontrol Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726848157734x840823358687591600/kky.png" alt="Kalite ve Kontrol Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(0,155,87)"><span class="urun-title">Doküman Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726848203049x704470532565305600/dokuman.png" alt="Doküman Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(117,81,204)"><span class="urun-title">Malzeme ve Tedarik Planlama</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726848256101x634920448258216200/malzeme.png" alt="Malzeme ve Tedarik Planlama"></div></div>
+        <div class="urun-card" style="--card-color:rgb(17,142,147)"><span class="urun-title">Finans Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726848295482x525205914215798100/finans.png" alt="Finans Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(254,1,100)"><span class="urun-title">Değerlendirme Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726848342196x417694136248973700/deg%CC%86erlendirme.png" alt="Değerlendirme Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(255,164,0)"><span class="urun-title">Hatırlatma Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726848386926x727532213056162800/hat%C4%B1rlatma.png" alt="Hatırlatma Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(40,44,59)"><span class="urun-title">Eğitim Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1726848432821x317068176833665860/eg%CC%86itim.png" alt="Eğitim Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(17,142,147)"><span class="urun-title">QR Menü</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1727074029947x512364608791415760/qr.png" alt="QR Menü"></div></div>
+        <div class="urun-card" style="--card-color:rgb(40,44,59)"><span class="urun-title">Lojistik Yönetimi</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1727074094399x313917318927121150/lojis.png" alt="Lojistik Yönetimi"></div></div>
+        <div class="urun-card" style="--card-color:rgb(0,155,87)"><span class="urun-title">Ayarlar</span><div class="urun-img-area"><img src="https://26727d055105d42392958b58441c0398.cdn.bubble.io/cdn-cgi/image/w=260,h=260,f=auto,dpr=1.5,fit=contain/f1727074254935x387041898680735600/intranet.png" alt="Ayarlar"></div></div>
+      </div>
+    </main>
+  `;
+}
